@@ -1,0 +1,8 @@
+ {
+"name": "teamrubiconusa/classy-org-wp",
+"type": "wordpress-plugin",
+    "repositories": [{
+      "type": "vcs",
+        "url": "git@github.com:teamrubiconusa/classy-org-wp.git"
+      }]
+   }
