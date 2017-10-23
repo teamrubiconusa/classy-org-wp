@@ -104,7 +104,7 @@ class ClassyOrg_CampaignProgressWidget extends WP_Widget
           %s
           <span class="classy-org-progress_raised">$%s</span>
             <span class="classy-org-progress_goal"> /
-              <span class="sc-campaign-progress_goal_inner">%s</span>
+              <span class="sc-campaign-progress_goal_inner">$%s</span>
             </span>
           <div class="classy-org-progress_bar-mask">
             <div class="classy-org-progress_bar-value" style="width: %s%%;"></div>
@@ -129,8 +129,8 @@ WIDGET_TEMPLATE;
         $html = sprintf(
             $widgetTemplate,
             $title,
-            esc_html($totalRaised),
-            esc_html($goal),
+            esc_html(number_format($totalRaised)),
+            esc_html(number_format($goal)),
             esc_html($percentToGoal)
         );
 
